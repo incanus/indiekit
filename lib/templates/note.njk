@@ -1,5 +1,8 @@
 ---
 date: {{ published }}
+{%- if slug %}
+slug: {{ slug }}
+{%- endif %}
 {%- if category %}
 category:
 {%- for item in category %}
